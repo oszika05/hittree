@@ -34,7 +34,7 @@ export default function Home(props) {
 }
 
 export async function getServerSideProps(context) {
-    const newsRequest = await fetch('http://localhost:3000/api/news');
+    const newsRequest = await fetch('https://hittree.vercel.app/api/news');
     const news = await newsRequest.json();
 
     return {
